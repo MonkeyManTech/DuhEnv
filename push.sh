@@ -7,9 +7,11 @@ NUGET_API_KEY=$3
 
 if [ "$TARGET_PACKAGE" = "duhenv" ]; then
   TARGET_PACKAGES="$(find -wholename "./src/DuhEnv/**/*.nupkg")"
-  echo "Unexpected target package name \"$TARGET_PACKAGE\"; Accepted value: duhenv"
+else
+  echo "Unexpected target package name \"$TARGET_PACKAGE\"; Accepted values: duhenv"
   exit 1
 fi
+  
 
 if [ "$NUGET_TARGET_SERVICE" = "noob" ]; then
   NUGET_TARGET_URL="https://nuget.nickthenoob.com/v3/index.json"
