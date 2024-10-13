@@ -4,10 +4,10 @@
         <TargetFramework>net8.0</TargetFramework>
         <RootNamespace>DuhEnv</RootNamespace>
         <Authors>Nick Martin</Authors>
-        <Description>DuhEnv is an extension blab blahblabh blbab.</Description>
+        <Description>DuhEnv is a tiny layer of extension methods and functionality over ASP.NET Core that makes working with environment files easy.</Description>
         <PackageTags>asp.net core;dotenv;.net core;</PackageTags>
         <PackageProjectUrl>https://github.com/MonkeyManTech/DuhEnv</PackageProjectUrl>
-        <PackageIcon>carterlogo.png</PackageIcon>
+        <PackageIcon>duhenvlogo.png</PackageIcon>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <LangVersion>latest</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
