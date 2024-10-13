@@ -48,7 +48,6 @@ jobs:
           path: '**/*.trx'
           reporter: dotnet-trx
       
-      # PR merged, push prelease and CarterTemplate Carter packages to feedz
       - if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads')
         name: Push prelease packages to feeds
         run: ./push.sh duhenv noob ${{ secrets.FEEDS_KEY }}
