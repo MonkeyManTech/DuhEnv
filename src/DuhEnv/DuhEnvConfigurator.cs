@@ -1,17 +1,23 @@
 namespace DuhEnv;
 
-public class DotEnvConfigurator
+public class DuhEnvConfigurator(string fileName)
 {
-    internal DotEnvConfigurator()
-    {
-        
-    }
+    internal bool IncludeEmptyValues;
+    internal string EnvFileName = fileName;
 
-    internal bool ExcludeEmptyValues;
+    public DuhEnvConfigurator() : this(".env")
+    { }
 
-    public DotEnvConfigurator WithEmptyValues()
-    {
-        this.ExcludeEmptyValues = true;
+    public DuhEnvConfigurator WithEmptyValues()
+    { 
+        IncludeEmptyValues = true;
         return this;
     }
+    
+    public DuhEnvConfigurator WithFileName(string fileName)
+    {
+        EnvFileName = fileName;
+        return this;
+    }
+    
 }
